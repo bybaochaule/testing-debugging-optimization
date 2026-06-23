@@ -1,1 +1,18 @@
+interface:
+  display_name: "Testing, Debugging & Optimization"
+  short_description: "Tests, debugs, benchmarks, and optimizes agent behavior with scenario coverage, accuracy metrics, latency tracking, and iteration logs."
+  default_prompt: "Use the testing-debugging-optimization skill to evaluate an agent with real scenarios, edge cases, accuracy checks, latency measurements, and an optimization loop."
 
+policy:
+  allow_implicit_invocation: true
+
+dependencies:
+  tools: []
+  files:
+    - SKILL.md
+    - README.md
+    - assets/test-matrix-template.csv
+    - assets/optimization-log-template.md
+    - references/style-guide.md
+    - references/evaluation-scenarios.md
+    - scripts/example_helper.py
